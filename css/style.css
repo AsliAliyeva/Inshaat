@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {font-family: Lato , sans-serif;}
+:root {
+    --mavi : #d1e3ff;
+    --goy :  #0355cc ;
+    --narinci : #ff8a1d ;
+}
+.bgmavi {background-color: var(--mavi);}
+.bggoy {background-color: var(--goy);}
+.bgnarinci { background-color: var(--narinci);}
+.bgag { background-color: #fff;}
+.txtnarinci { color: var(--narinci);}
+.txtmavi {color: var(--mavi);}
+.txtgoy {color: var(--goy);}
+.txtag { color: #fff;}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+h2 {
+     font: bold 'Merriweather Sans', sans-serif;
+     margin: 25px auto;
+     text-align: center;
+}
+h3 { font-size: 2em;}
+h6 {
+    margin: 10px;
+    padding: 25px 0;
+    text-align: center;
+    border-top: 0.8px solid #fff;
+}
+
+#basliq {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#logo { 
+    text-transform: uppercase;
+    font: 600 1.5em bold Lato , sans-serif; 
+}
+
+input[type="checkbox"]:checked~ #menu { display: none;}
+label {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+    text-align: center;
+    width: 48%;
+    font-size: 24px;
+    cursor: pointer;
+}
+#inp {display: none;}
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#menu li a {
+    display: inline-block;
+    padding: 10px 25px;
+}
+.cardImg{padding-top: 20px; margin: auto;}
+.cardImg img { 
+    width: 100%;
+    margin: auto;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+.card p {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 10px;
+    color: #444;
+}
+.card a { margin: 10px auto;}
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 15px 45px;
+    border: 1px solid ;
+    border-radius: 3px;
+}
+.btnNarinci{border-color: var(--narinci);}
+.btnNarinci:hover {
+    background-color: transparent;
+    color: var(--narinci);
+}
+.btnMavi:hover {
+    background-color: transparent;
+    color: var(--goy);
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    padding: 30px 15px;
+    margin: 15px auto;
+}
+.cards img { 
+    width: 75px; 
+    height: 75px; 
+    margin-bottom: 25px;
+    /* color: #726dae;  DESTEKLEMIR*/
+}
+.cards a  {   
+    font-size: 1.25rem; 
+    text-transform: uppercase;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-top: 10px;
+}
+.cards:hover { background-color: var(--narinci);}
+
+#about div h2 {
+    text-transform: uppercase;
+    color: black;
+}
+#aboutImg { width: 80%;}
+#servicesImg {display: none;}
+
+#our { 
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+}
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#send {width: 100%;}
+#send .cards:hover {background-color: transparent;}
+#map {
+    margin: 10px auto ;
+    width: 80%;
+    height: 50vh;
+}
+footer { background-color: #0a0f43;}
+hr { 
+    background-color: #a3a5b8;
+    width: 1px;
+    height: 40px;
+}
+#touch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#touch div h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 25px auto;
+    font-size: 1.5rem;
+}
+#intouch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ftr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ftr .cards {
+    text-align: center;
+    background-color: var(--goy);
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+.ftr p {margin: 5px auto;}
+.ftr .cards:hover{ background-color: var(--narinci);}
+#s1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#icons { 
+    background-color: white;  
+    padding: 10px;
+}
+#icons a i {
+    color: var(--goy);
+    margin: 5px 10px;
+}
+#son{
+    width: 90%; 
+    padding: 10px 0;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container { max-width: 1170px; margin: auto;}
+    .bars {display: none;}
+    
+    nav { 
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    h2 { 
+        font-size: 2.8em; 
+        text-align: left; 
+        width: 40%;
+        margin-left: 0;
+    }
+    #menu { flex-direction: row;}
+    .c3 {   display: flex;    }
+    .card { width: 50%; }
+    .card p{ padding-left: 0;}
+    .card a{ margin-left: 0;}
+    .cardImg  {width: 50%;}
+    .cardImg img {width: 100%;}
+
+    .card3 { 
+        display: flex; 
+        padding-top: 30px;
+   }
+   .cards {margin: 10px;}
+    #about {padding: 40px 0;}
+    #about div h2 {margin-left: 0; width: 100%;}
+    #aboutImg {text-align: right;}
+    #aboutImg .cardImg {width: 80%;}
+    #servicesImg {display: inline-block;}
+    #servicesImg { width: 40%; }
+    #services { padding: 40px 0;}
+    #contact { 
+        align-items: flex-start; 
+        width: 50%;
+    }
+    #contact h3 , #sendBtn a {margin: 10px;}
+    #contactUs { display: flex; margin: 20px auto; align-items: center;  }
+    #map {width: 50%;}
+    #son {width: 100%;}
+    #intouch {flex-direction: row;}
+    hr {
+        height: 1px;
+        width: 50px;
+    }
+    .ftr {width: 30%;}
+    .dn {display: none;}
+}
